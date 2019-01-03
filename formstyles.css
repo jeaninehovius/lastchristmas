@@ -1,0 +1,62 @@
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#fff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+form{
+  font-family: 'Major Mono Display', monospace;
+  margin:2%;
+    }
+
+h2{
+  margin:2%;
+}
+
+ #personalia{
+   text-decoration: none;
+background-color:#e8f0fb;
+width:40%;
+margin:2%;
+margin-left: 10%;
+padding:1%;
+width:40%;
+margin:2%;
+margin-left: 10%;
+padding:1%;
+ }
+
+.textbox{
+  margin-bottom: 2%;
+}
+
+.radiobuttons{
+  margin:2% 2% 2% 0%;
+}
+
+.radiobuttons{
+margin:2% 2% 2% 0%;
+      }
+
+textarea{
+    outline:none;
+    resize:none;
+    background-color:#e8f0fb;
+    margin-top: 0.5%;
+    }
+
+input{
+  margin-top:0.5%;
+  margin-bottom: 0.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}

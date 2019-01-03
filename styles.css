@@ -1,0 +1,334 @@
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#fff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+h1, h3, nav a{
+font-family: 'Heebo', sans-serif;
+ font-family: 'Major Mono Display', monospace;
+ text-transform:lowercase;
+}
+
+h2{
+ font-family: 'Major Mono Display', monospace;
+  text-transform: none;
+margin-bottom: 1em;
+}
+
+p{
+font-family: 'Montserrat', sans-serif;
+font-size: 1em;
+margin-right: 10%;
+}
+
+.banner{
+  grid-area:banner;
+}
+
+.nav{
+    grid-area: nav;
+    }
+
+.bigimage{
+  grid-area:bigimage;
+  }
+
+.content1{
+  grid-area: content1;
+}
+
+.text1{
+  grid-area: text1;
+}
+
+.content2{
+  grid-area: content2;
+}
+
+.text2{
+  grid-area:text2;
+}
+
+.content3{
+  grid-area:content3;
+  }
+
+.text3{
+  grid-area:text3;
+}
+
+.content4{
+  grid-area:content4;
+}
+
+.text4{
+  grid-area:text4;
+}
+
+.content5{
+  grid-area: content5;
+  background-color:
+}
+
+.content6{
+  grid-area: content6;
+}
+.footer{
+  grid-area: footer;
+}
+
+.bigimage h1{
+text-align: center;
+text-transform:none;
+padding-top: 30%;
+color:gold;}
+
+/* mobile styles */
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:130px 375px 250px 250px 250px 250px 100px;
+  grid-template-areas:
+  "logo nav"
+  "bigimage bigimage"
+  "content1 content2"
+  "content3 content4"
+  "content5 content6"
+  "text1 text2"
+  "text3 text4"
+  "footer footer";
+  }
+
+.box{
+font-size:1em;
+padding:3%;
+box-sizing:border-box;
+width:100%;
+}
+
+nav a{
+flex:0 1 auto;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  text-decoration: none;
+  font-size: 1em;
+ justify-content: space-around;
+  }
+
+nav{
+background-color: hsl(187, 96%, 100%);
+text-align: right;
+}
+
+img{
+   width:100%;
+  margin:0%;
+  box-sizing:border-box;
+  }
+
+.bigimage{
+  background-image: linear-gradient(black, white);
+    background-image: url(images/mood/snowsmall.jpg);
+    background-size: cover;
+    color: hsl(63, 0%, 82%);
+}
+
+.content1{
+background-image: linear-gradient(black, white);
+  background-image: url(images/chalets/twins960.jpg);
+  background-size: cover;
+  color: hsl(63, 0%, 82%);
+}
+
+}
+.content2{
+  background-image: url(images/food/soupsmall.jpg);
+  background-size: cover;
+}
+
+.content3{
+  background-image: url(images/equip/gogglesmall.jpg);
+  background-size:cover;
+}
+
+.content4{
+background-color: hsl(216, 79%, 96%);
+background-image: url(images/mood/dronesmall.jpg);
+  background-size:cover;
+}
+
+.content4 h2{
+  color:white;
+  }
+
+  .content5{
+    color:hsl(215, 21%, 34%);
+      text-align: right;
+      font-size: 0.7em;
+  }
+  .content5 h2{
+    padding-top: 20%;
+    padding-right:5%;
+    padding-left:10%;
+  }
+
+.content6{
+  background-image: url(images/equip/skismall.jpg);
+  background-size:cover;
+}
+
+.content6 h2{
+  color:gold;
+}
+
+.footer{
+  text-align: right;
+  color: hsl(63, 0%, 82%);
+background-color:  hsl(215, 21%, 34%);
+}
+
+.footer p{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* tablet styles */
+@media only screen and (min-width: 650px){
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:130px 500px 350px 350px 350px 350px 100px;
+    grid-template-areas:
+    "nav nav nav nav nav nav nav nav"
+    "bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage"
+    "content1 content1 content1 content1 content2 content2 content2 content2"
+    "text1 text1 text2 text2 text4 text4 text3 text3"
+    "content3 content3 content3 content3 content4 content4 content4 content4"
+    "content5 content5 content5 content5 content6 content6 content6 content6"
+    "footer footer footer footer footer footer footer footer";
+    }
+
+  .navbox{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+}
+
+nav a{
+  flex:0 1 auto;
+  text-decoration: none;
+  font-size: 1.2rem;
+  }
+
+.bigimage{
+  background-image: url(images/mood/snowmedium.jpg);
+  background-size:cover;
+}
+
+.bigimage h1{
+  padding-top: 20%;
+}
+
+.content2{
+  background-image: url(images/food/soupmedium.jpg);
+  background-size:cover;
+}
+.content3{
+  background-image: url(images/equip/gogglesmedium.jpg);
+  background-size:cover;
+}
+.content4{
+  background-image: url(images/mood/dronemedium.jpg);
+    background-size:cover;
+        }
+
+.text4{
+  text-align: center;
+  padding: 15%;
+  line-height: 3;
+  background-color: #c1d2ea;
+}
+
+  .content5{
+  font-size: 1.5em;
+  }
+}
+
+/* big screen */
+@media only screen and (min-width: 1025px){
+
+  .wrapper{
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:130px 500px 350px 350px 350px 350px 300px;
+    grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage"
+      "bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage bigimage"
+    "content1 content1 content1 content1 text1 text1 content2 content2 content2 content2 text2 text2"
+    "text3 text3 content3 content3 content3 content3 text4 text4 content4 content4 content4 content4"
+    "content5 content5 content5 content5 content5 content5 content6 content6 content6 content6 content6 content6"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+
+  .bigimage{
+    background-image: url(images/mood/snowlarge.jpg);
+    background-size:cover;
+  }
+
+  .bigimage h1{
+    padding-top: 5%;
+    font-size: 4em;
+  }
+
+.content1{
+  background-image: url(images/chalets/twins.jpg);
+  background-size:cover;
+}
+
+.content2{
+  background-image: url(images/food/souplarge.jpg);
+  background-size:cover;
+}
+
+.content3{
+  background-image: url(images/equip/goggleslarge.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+.content5 h2{
+  padding-top:10%;
+}
+
+.content6{
+  background-image: url(images/equip/skilarge.jpg);
+}
+
+.text4 h1{
+  margin: 10%;
+  text-align: center;
+  line-height: 2;
+}
+
+.footer li{
+      margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+.footer p{
+  margin:0%;
+  font-size: 1em;
+}
+}

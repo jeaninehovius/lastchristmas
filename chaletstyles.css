@@ -1,0 +1,268 @@
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#fff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+.header{
+  grid-area:header;
+}
+
+.brouwhuis{
+  grid-area:brouwhuis;
+}
+
+.brouwhuisint{
+  grid-area: brouwhuisint;
+}
+
+.brouwhuistext{
+  grid-area:brouwhuistext;
+}
+
+.twins{
+  grid-area: twins;
+}
+
+.twinsint1{
+  grid-area: twinsint1;
+}
+
+.twinsint2{
+  grid-area: twinsint2;
+}
+
+.twinstext{
+  grid-area: twinstext;
+}
+
+.mirrorcube{
+  grid-area: mirrorcube;
+}
+
+.cubeint{
+  grid-area:cubeint;
+  background-color: hsl(9, 5%, 26%);
+}
+
+.cubeintfan{
+  grid-area:cubeintfan;
+  background-color: hsl(35, 30%, 67%);
+}
+
+.cubetext{
+  grid-area:cubetext;
+}
+
+.footer{
+  grid-area:footer;
+}
+
+.box {
+  font-family: 'Major Mono Display', monospace;
+  font-size:1em;
+  padding:0%;
+  box-sizing:border-box;
+  width:100%;
+  object-fit: cover;
+  object-position: center;
+  }
+
+  li{
+    list-style-type: none;
+     font-family: 'Major Mono Display', monospace;
+     padding: 1%;
+     margin:1%;
+  }
+
+p{
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  padding:2%;
+}
+
+h1{
+  font-size: 1.6em;
+  font-family: 'Major Mono Display', monospace;
+padding:1.5%;
+}
+
+h2{
+  margin-top: 5%;
+  padding:2%;
+    font-family: 'Major Mono Display', monospace;
+}
+
+h3{
+font-family: 'Major Mono Display', monospace;
+color: hsl(44, 100%, 50%);
+padding:2%;
+}
+
+p{
+font-size: 1.4em;
+color: black;
+line-height: 1.5;
+}
+
+img{
+  margin-bottom:0%;
+  max-width: 100%;
+}
+
+.footer li{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: right;
+  }
+
+.footer p{
+  margin:0%;
+  font-size: 1em;
+  text-align: right;
+}
+
+.footer{
+  color: hsl(63, 0%, 82%);
+  background-color:  hsl(215, 21%, 34%);
+}
+
+.wrapper{
+  display:grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas:
+"header header"
+"brouwhuis brouwhuis"
+"brouwhuistext brouwhuistext"
+"brouwhuisint brouwhuisint"
+"twins twins"
+"twinstext twinstext"
+"twinsint1 twinsint1"
+"twinsint2 twinsint2"
+"mirrorcube mirrorcube"
+"cubetext cubetext"
+"cubeintfan cubeintfan"
+"cubeint cubeint"
+"footer footer";
+  }
+
+/* tablet styles */
+
+@media only screen and (min-width:740px) {
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+"header header header header"
+"brouwhuis brouwhuis brouwhuis brouwhuis"
+"brouwhuis brouwhuis brouwhuis brouwhuis"
+"brouwhuisint brouwhuisint brouwhuistext brouwhuistext"
+"twins twins twins twins"
+"twins twins twins twins"
+"twinstext twinstext twinsint1 twinsint1"
+"twinstext twinstext twinsint2 twinsint2"
+"mirrorcube mirrorcube mirrorcube mirrorcube"
+"cubeintfan cubeintfan cubetext cubetext"
+"cubeintfan cubeintfan cubetext cubetext"
+"cubeint cubeint cubeint cubeint"
+"footer footer footer footer";
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  margin-top: 2%;
+  font-size: 2em;
+}
+
+h3{
+font-size:  1.8em;
+line-height: 1.5em;
+}
+
+p{
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 5%;
+}
+
+.brouwhuistext {
+  padding:5%;
+  background-color:hsl(49, 7%, 90%);
+}
+
+.twinstext{
+  padding:5%;
+  background-color:hsl(30, 9%, 90%);
+}
+
+.cubetext{
+  padding:5%;
+  background-color:hsl(210, 32%, 90%);
+}
+
+}
+
+
+@media only screen and (min-width:1025px) {
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+"header header header header header header header header header header header header"
+"brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis"
+"brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis brouwhuis"
+"brouwhuisint brouwhuisint brouwhuisint brouwhuisint brouwhuisint brouwhuisint brouwhuistext brouwhuistext brouwhuistext brouwhuistext brouwhuistext brouwhuistext"
+"twins twins twins twins twins twins twins twins twins twins twins twins"
+"twins twins twins twins twins twins twins twins twins twins twins twins"
+"twinstext twinstext twinstext twinstext twinsint1 twinsint1 twinsint1 twinsint1 twinsint2 twinsint2 twinsint2 twinsint2"
+"twinstext twinstext twinstext twinstext twinsint1 twinsint1 twinsint1 twinsint1 twinsint2 twinsint2 twinsint2 twinsint2"
+"mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube"
+"mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube mirrorcube"
+"cubetext cubetext cubetext cubetext cubetext cubetext cubetext cubetext cubetext cubetext cubetext cubetext"
+"cubeintfan cubeintfan cubeintfan cubeintfan cubeint cubeint cubeint cubeint cubeint cubeint cubeint cubeint"
+"footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+nav a{
+flex:0 1 auto;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  text-decoration: none;
+  font-size: 1em;
+ justify-content: space-around;
+ text-transform: lowercase;
+  }
+
+nav{
+background-color: hsl(187, 96%, 100%);
+text-align: right;
+}
+
+
+h3{
+padding: 1%;
+}
+
+p{
+  padding:1%;
+  margin-top: 0%;
+  line-height: 1.5;
+  font-size: 1.5em;
+}
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="formstyles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100|Major+Mono+Display|Montserrat:200" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>contact us</title>
+  </head>
+
+  <body>
+
+<form action="http://new.com" method="post">
+
+
+<h2>Book your stay</h2>
+
+<div id="personalia">
+  <p>
+    <label for="name">First Name</label><br>
+    <input type="text" name="firstname" id="firstname"/><br></p>
+  <p>
+
+    <label for ="last name">Last Name </label><br>
+<input type="text" name="lastname" id="lastname" /> </p>
+
+  <p>
+<label for="residence">Where do you live?</label><br>
+  <input type="text" name="residence" id="residence"/> <br> </p>
+
+  <p>
+  <label for="email">Your emailadress</label><br>
+  <input type="text" name="email" id="email"/> <br> </p>
+  </div>
+
+<div class="yourstay">
+
+  <p>
+  <label for="adults">Number of Adults</label><br>
+  <input type="number" name="adults" id="adults"/> <br> </p>
+  <p>
+
+    <p>
+  <label for="children">Number of Children</label><br>
+  <input type="number" name="children" id="children"/> <br> </p>
+
+<p>
+<label for="from">From</label><br>
+  <input type="date" name="from" id="from"/> <br> </p>
+
+<p>
+<label for="until">Until</label> <br>
+<input type="date" name="until" id="until"/><br> </p>
+
+</div>
+
+
+<div class="textbox">
+  <label for="textarea">Ask us anything about your stay</label><br>
+  <textarea cols="100" rows="10" name="story" id="story"></textarea>
+</div>
+
+
+
+<div class="radiobuttons">
+  <label for="enjoy">Did you stay with <b>Winter and Berg</b> before?</label><br>
+
+<input type="radio" name="enjoy" id="enjoyyes" value="Yes!" checked="checked"/>
+<label for="enjoyno">No</label>
+
+<input type="radio" name="enjoy" id="enjoyno" value="No."/>
+<label for="enjoyyes">Yes!</label>
+</div>
+
+<input type="submit" value="Send Request">
+</form>
+
+  </body>
+</html>
